@@ -1,0 +1,38 @@
+// GLOBAL VARIABLES
+
+$black: #2C2C2C;
+$offWhite: #f0EFED;
+$forestGreen: #074115;
+$sunnyYellow: #F8E71C;
+$green: #0E902D;
+
+//GLOBAL MIXINS
+
+//GLOBAL TYPOGRAPHY
+html {
+    font-size: 62.5%;
+}
+
+body, button {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+//OTHER GLOBAL STYLES
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
