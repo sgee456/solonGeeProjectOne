@@ -14,12 +14,16 @@
 <body class="contact">
     <header>
         <div class="wrapper">
-            <h2>Planted</h2>   
-            <a class="hamburger" href="#">
-                <i class="fas fa-bars"></i>
-            </a>
             <nav>
                 <ul>
+                    <li><h2>Planted</h2></li>
+
+                    <li>
+                        <a class="hamburger" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+                    
                     <li><a href="./home.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
@@ -33,25 +37,40 @@
         <div class="wrapper">
             <div class="leftColumn">
                 <h1>Get in Touch</h1>
-                <nav class="socialNav">
-                    <li><a href="#"><i></i></a></li>
-                    <li><a href="#"><i></i></a></li>
-                    <li><a href="#"><i></i></a></li>
-                    <li><a href="#"><i></i></a></li>
+                <nav class="socialNav"> 
+                    <li><a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+
+                    <li><a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+
+                    <li><a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+
+                    <li><a href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a></li>
                 </nav>
                 <ul class="contactInfo">
                     <li>
                         <p>info@email.com</p>
                     </li>
+
                     <li>
                         <p>123 - 456 - 7890</p>
                     </li>
+
                     <li>
                         <p>123 Queen Street West, Unit 10</p>
                     </li>
+
                     <li>
                         <p>Toronto, Ontario</p>
                     </li>
+
                     <li>
                         <p>M5V2D5</p>
                     </li>
@@ -61,14 +80,14 @@
     
             <div class="rightColumn">
                 <form action="#" method="POST" class="contactForm">
-                    <label for="name">Your name:</label>
-                    <input type="text" id="name" name="name">
+                    <label class="sr-only" for="name">Your name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
                     
-                    <label for="email">Your email:</label>
-                    <input type="email" id="email" name="email">
+                    <label class="sr-only" for="email">Your email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email address">
                     
-                    <label for="message">Your message here:</label>
-                    <textarea id="message" name="message"></textarea>
+                    <label class="sr-only" for="message">Your message here:</label>
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
                     
                     <button type="submit" class="greenStylin">
                         Submit
