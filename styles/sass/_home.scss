@@ -17,6 +17,10 @@
             position: relative;
         }
 
+        .imgContainer::before {
+            @include backgroundBox(150px, 150px);
+        }
+
         .backgroundBox {
             top: 150px;
             left: 150px;

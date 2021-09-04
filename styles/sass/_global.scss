@@ -8,6 +8,17 @@ $green: #0E902D;
 
 //GLOBAL MIXINS
 
+@mixin backgroundBox($x, $y) {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: $x;
+    top: $y;
+    background-color: $sunnyYellow;
+}
+
 //GLOBAL TYPOGRAPHY
 html {
     font-size: 62.5%;
@@ -35,12 +46,4 @@ a {
 ul {
     padding: 0;
     list-style: none;
-}
-
-.backgroundBox {
-    width: 100%;
-    height: 100%;
-    background: $sunnyYellow;
-    position: absolute;
-    z-index: -1;
 }
