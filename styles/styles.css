@@ -376,16 +376,21 @@ ul {
   height: 575px;
 }
 .contact .inTouch {
+  position: relative;
+  height: 575px;
   background: #f0EFED;
 }
 .contact .maxWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
+  position: absolute;
   top: -260px;
 }
 .contact .leftColumn {
@@ -421,12 +426,15 @@ ul {
   margin: 20px 0;
   letter-spacing: 2px;
 }
+.contact .contactInfo {
+  margin-bottom: -9px;
+}
 .contact .rightColumn {
   width: 72%;
   margin-right: 10%;
   position: relative;
   left: 70px;
-  top: 15px;
+  bottom: 20px;
 }
 .contact .formContainer {
   position: relative;
@@ -447,7 +455,7 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 70px;
+  padding: 80px 70px 70px;
   position: relative;
 }
 .contact input, .contact textarea {

@@ -5,13 +5,16 @@
     }
 
     .inTouch {
+        position: relative;
+        height: 575px;
         background: $offWhite;
     }
 
     .maxWrapper {
         display: flex;
+        align-items: flex-end;
         justify-content: space-between;
-        position: relative;
+        position: absolute;
         top: -260px;
     }
 
@@ -52,12 +55,16 @@
         letter-spacing: 2px;
     }
 
+    .contactInfo {
+        margin-bottom: -9px;
+    }
+
     .rightColumn {
         width: 72%;
         margin-right: 10%;
         position: relative;
         left: 70px;
-        top: 15px;
+        bottom: 20px;
     }
 
     .formContainer {
@@ -72,7 +79,7 @@
         background: white;
         display: flex;
         flex-wrap: wrap;
-        padding: 70px;
+        padding: 80px 70px 70px;
         position: relative;
     }
 
