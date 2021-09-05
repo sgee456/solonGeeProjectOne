@@ -17,6 +17,11 @@
             position: relative;
         }
 
+        .imgContainer img {
+            position: relative;
+            z-index: 1; 
+        }
+
         .imgContainer::before {
             @include backgroundBox(150px, 150px);
         }
