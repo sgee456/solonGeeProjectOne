@@ -415,6 +415,12 @@ ul {
   color: #0E902D;
   font-size: 2.5rem;
 }
+.contact strong {
+  display: block;
+  font-weight: 700;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
 .contact .rightColumn {
   width: 72%;
   margin-right: 10%;
@@ -427,8 +433,8 @@ ul {
 }
 .contact .formContainer::before {
   content: "";
-  width: 90%;
-  height: 90%;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
   position: absolute;
   left: -20px;
   bottom: -20px;
