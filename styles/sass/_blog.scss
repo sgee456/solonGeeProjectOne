@@ -2,5 +2,62 @@
 
     header{
         background-image: url(../assets/blog-header-1.jpg);
+        background-position: bottom left;
+        height: 575px;
+    }
+
+    main {
+        background-color: $offWhite;
+        padding-top: 135px;
+    }
+
+    .maxWrapper {
+        display: flex;
+        position: relative;
+    }
+
+    .leftColumn {
+        background-color: white;
+        width: 25%;
+        margin-left: 10%;
+        margin-right: 5%;
+
+        .imgContainer {
+            // width: 32%;
+            height: 433px;
+            max-width: 513px;
+            max-height: 433px;
+        }
+
+        img {
+            width: 32%;
+            max-width: 513px;
+            max-height: 433px;
+            position: absolute;
+            left: 0;
+            top: -20px;
+        }
+    }
+
+    .rightColumn {
+        width: 50%;
+        margin-right: 10%;
+
+        .currentPostImage {
+            height: 646px;
+        }
+
+        .currentPostImage img {
+            width: 61%;
+            max-width: 975px;
+            max-height: 646px;
+            position: absolute;
+            right: 0;
+            top: -430px;
+        }
+
+        .profileImg {
+            width: 92px;
+        }
     }
 }

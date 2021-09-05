@@ -380,6 +380,55 @@ ul {
 
 .blog header {
   background-image: url(../assets/blog-header-1.jpg);
+  background-position: bottom left;
+  height: 575px;
+}
+.blog main {
+  background-color: #f0EFED;
+  padding-top: 135px;
+}
+.blog .maxWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.blog .leftColumn {
+  background-color: white;
+  width: 25%;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+.blog .leftColumn .imgContainer {
+  height: 433px;
+  max-width: 513px;
+  max-height: 433px;
+}
+.blog .leftColumn img {
+  width: 32%;
+  max-width: 513px;
+  max-height: 433px;
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+.blog .rightColumn {
+  width: 50%;
+  margin-right: 10%;
+}
+.blog .rightColumn .currentPostImage {
+  height: 646px;
+}
+.blog .rightColumn .currentPostImage img {
+  width: 61%;
+  max-width: 975px;
+  max-height: 646px;
+  position: absolute;
+  right: 0;
+  top: -430px;
+}
+.blog .rightColumn .profileImg {
+  width: 92px;
 }
 
 .contact header {
