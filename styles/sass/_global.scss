@@ -49,8 +49,8 @@ a {
     text-decoration: none;
 }
 
-nav {
-    background-color: $black;
+.siteNav {
+    background-color: black;
 
     h2 {
         color: white;
@@ -67,7 +67,15 @@ nav {
     }
 
     li {
-        margin: 0 30px;
+        margin: 0 26px;
+    }
+
+    li:first-child {
+        margin-left: 0;
+    }
+
+    li:nth-child(2) {
+        display: none;
     }
 
     a {
@@ -91,3 +99,25 @@ ul {
     width: 80%;
     margin: 0 auto;
 }
+
+.lineBreak {
+    display: block;
+}
+
+.contact h1, .blog h1 {
+    color: $sunnyYellow;
+    font-size: 8rem;
+    line-height: 92px;
+}
+
+.copyright {
+    background: $black;
+    color: $offWhite;
+    text-align: center;
+
+    p {
+        padding: 7px 0;
+        margin: 0;
+    }
+}
+

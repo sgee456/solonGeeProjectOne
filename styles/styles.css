@@ -264,17 +264,17 @@ a {
   text-decoration: none;
 }
 
-nav {
-  background-color: #2C2C2C;
+.siteNav {
+  background-color: black;
 }
-nav h2 {
+.siteNav h2 {
   color: white;
   font-weight: 400;
   font-size: 4.2rem;
   margin: 0;
   line-height: 3.8rem;
 }
-nav ul {
+.siteNav ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -283,10 +283,16 @@ nav ul {
   display: flex;
   padding: 25px 0;
 }
-nav li {
-  margin: 0 30px;
+.siteNav li {
+  margin: 0 26px;
 }
-nav a {
+.siteNav li:first-child {
+  margin-left: 0;
+}
+.siteNav li:nth-child(2) {
+  display: none;
+}
+.siteNav a {
   color: white;
   font-weight: 400;
   text-transform: uppercase;
@@ -305,6 +311,26 @@ ul {
 .wrapper {
   width: 80%;
   margin: 0 auto;
+}
+
+.lineBreak {
+  display: block;
+}
+
+.contact h1, .blog h1 {
+  color: #F8E71C;
+  font-size: 8rem;
+  line-height: 92px;
+}
+
+.copyright {
+  background: #2C2C2C;
+  color: #f0EFED;
+  text-align: center;
+}
+.copyright p {
+  padding: 7px 0;
+  margin: 0;
 }
 
 .home h1 {
@@ -332,4 +358,83 @@ ul {
 .home .aboutFounder .backgroundBox {
   top: 150px;
   left: 150px;
+}
+
+.contact header {
+  background-image: url(../assets/contact-header-1.jpg);
+  height: 575px;
+}
+.contact .inTouch {
+  background: #f0EFED;
+}
+.contact .maxWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: -260px;
+}
+.contact .leftColumn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+  margin-left: 10%;
+}
+.contact .socialNav {
+  margin-top: 195px;
+}
+.contact .socialNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.contact .socialNav li {
+  margin: 0 12px;
+}
+.contact .socialNav li:first-child {
+  margin-left: 0;
+}
+.contact .socialNav a {
+  color: #0E902D;
+  font-size: 2.5rem;
+}
+.contact .rightColumn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+  margin-right: 10%;
+  position: relative;
+  left: 70px;
+}
+.contact form {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 70px;
+}
+.contact input, .contact textarea {
+  border: none;
+  border-bottom: 1px solid #0E902D;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 3.2rem;
+}
+.contact input[type=text],
+.contact input[type=email] {
+  width: 50%;
+}
+.contact textarea {
+  border: 1px solid #0E902D;
+  resize: none;
+  width: 100%;
+  height: 260px;
 }
