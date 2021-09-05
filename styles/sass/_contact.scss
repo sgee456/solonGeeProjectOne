@@ -5,6 +5,8 @@
     }
 
     .inTouch {
+        display: flex;
+        justify-content: center;
         position: relative;
         height: 575px;
         background: $offWhite;

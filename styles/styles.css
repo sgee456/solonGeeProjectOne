@@ -321,6 +321,12 @@ ul {
   margin: 0 auto;
 }
 
+.maxWrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .lineBreak {
   display: block;
 }
@@ -376,6 +382,12 @@ ul {
   height: 575px;
 }
 .contact .inTouch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   height: 575px;
   background: #f0EFED;
