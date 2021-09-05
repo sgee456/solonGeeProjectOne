@@ -256,23 +256,39 @@ button, a {
   font-weight: 700;
   font-size: 2rem;
   line-height: 3.2rem;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #2C2C2C;
+}
 nav h2 {
+  color: white;
   font-weight: 400;
   font-size: 4.2rem;
   margin: 0;
   line-height: 3.8rem;
 }
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 0;
+}
+nav li {
+  margin: 0 30px;
 }
 nav a {
+  color: white;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -280,14 +296,15 @@ img {
   width: 100%;
 }
 
-a {
-  text-decoration: none;
-}
-
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .home h1 {
