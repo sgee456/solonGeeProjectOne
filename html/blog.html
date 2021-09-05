@@ -30,11 +30,11 @@
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
-
-            <div class="wrapper">
-                <h1>Blog</h1>
-            </div>
         </nav>
+
+        <div class="wrapper">
+            <h1>Blog</h1>
+        </div>
     </header>
 
 
@@ -42,18 +42,89 @@
     make maxWrapper position relative, position absolute on images
     have two columns inside of a wrapper flex-direction row, space between
     h2 in left column?
-    shift maxWrapper up
+    shift maxWrapper up?
     padding-top on left column
 -->
 
     <main>
         <div class="maxWrapper">
-            <aside class="leftColumn"></aside>
+            <aside class="leftColumn">
+                <div class="imgContainer"><img src="../assets/side-bar-image.jpg" alt="a open wooden window in a stone wall"></div>
+                
+                <article class="aboutArticle">
+                    <h2>About Planted</h2>
+    
+                    <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="#">Find out more.</a></p>
+                </article>
+
+                <article class="recentPostsArticle">
+                    <h2>Recent Posts</h2>
+                        <ul class="recentPosts">
+                            <li><a href="#">Donec facilisis tortor ut</a></li>
+                            <li><a href="#">Augue lacinia at viverra</a></li>
+                            <li><a href="#">Semper sed sapien metus</a></li>
+                            <li><a href="#">Scelerisque nec pharetra id</a></li>
+                        </ul>
+                </article>
+            </aside>
 
             <section class="rightColumn">
+                <article class="currentPost">
+                    <div class="imgContainer"><img src="../assets/post-image.jpg" alt="a lovely leafy plant"></div>
 
+                    <h2>Our mission at Planted</h2>
+
+                    <h3>Monday January 21th, 2019 by <a href="#">Yousra</a></h3>
+
+                    <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+
+                    <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum,volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.</p>
+
+                    <p>Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. </p>
+                </article>
+
+                <section class="commentsSection">
+                    <article class="comment">
+                        <div class="imgContainer">
+                            <img src="../assets/profile-image.jpg" alt="Jeremy's profile image">
+                        </div>
+
+                        <h2>Tuesday October 9th, 2018 by Jeremy</h2>
+
+                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.
+                        </p>
+                    </article>
+
+                    <article class="comment">
+                        <div class="imgContainer">
+                            <img src="../assets/profile-image-2.jpg" alt="Julia's profile image">
+                        </div>
+
+                        <h2>Wednesday October 10th, 2018 by Julia</h2>
+                        
+                        <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. </p>
+                    </article>
+                </section>
+                
+                <section class="formSection">
+                    <form action="#" method="POST" class="contactForm" name="contactForm">
+                        <label class="sr-only" for="name">Your name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        
+                        <label class="sr-only" for="email">Your email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
+                        
+                        <label class="sr-only" for="message">Your message here:</label>
+                        <textarea id="message" name="message" placeholder="Message"></textarea>
+                        
+                        <button type="submit" class="greenStyling">
+                            Submit
+                        </button>
+                    </form>
+                </section>
             </section>
-
         </div>
     </main>
 

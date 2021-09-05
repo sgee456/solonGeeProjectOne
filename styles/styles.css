@@ -300,6 +300,7 @@ a {
 }
 
 img {
+  display: block;
   width: 100%;
 }
 
@@ -375,6 +376,10 @@ ul {
 .home .aboutFounder .backgroundBox {
   top: 150px;
   left: 150px;
+}
+
+.blog header {
+  background-image: url(../assets/blog-header-1.jpg);
 }
 
 .contact header {
