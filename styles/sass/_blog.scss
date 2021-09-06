@@ -6,6 +6,11 @@
         color: $forestGreen;
     }
 
+    h2 {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+
     header{
         background-image: url(../assets/blog-header-1.jpg);
         background-position: bottom left;
@@ -42,15 +47,18 @@
             left: 0;
             top: -20px;
         }
-
-        h2 {
-            font-size: 2rem;
-            line-height: 3.2rem;
-        }
     }
 
-    .recentPosts a {
-        color: black;
+    .recentPosts {
+        a {
+            color: black;
+        }
+
+        li {
+            color: $green;
+            list-style-type: disc;
+            list-style-position: inside;
+        }
     }
 
     .rightColumn {
@@ -87,9 +95,54 @@
     }
 
     .comment {
+        display: flex;
+
         h2 {
             font-size: 2rem;
             line-height: 3.2rem;
         }
+    }
+
+    .textContainer {
+        width: calc(100% - 92px);
+    }
+
+    form {
+        padding: 80px 0 70px;
+        position: relative;
+    }
+
+    input, textarea {
+        background: $offWhite;
+        border: none;
+        border-bottom: 2px solid $green;
+        font-size: 2rem;
+        font-weight: 100;
+        line-height: 3.2rem;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: calc(50% - 14px);
+        margin-bottom: 55px;
+        padding-left: 25px;
+        padding-bottom: 12px;
+    }
+
+    input[type="text"] {
+        margin-right: 28px;
+    }
+
+    textarea {
+        border: 2px solid $green;
+        height: 260px;
+        margin-bottom: 55px;
+        padding: 45px 25px;
+        resize: none;
+        width: 100%;
+    }
+
+    .greenStyling {
+        width: 100%;
     }
 }

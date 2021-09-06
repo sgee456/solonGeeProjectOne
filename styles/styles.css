@@ -235,7 +235,7 @@ body {
   font-weight: 700;
 }
 
-p, h3 {
+p, h3, .recentPosts a {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -299,6 +299,44 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+input, textarea {
+  border: none;
+  border-bottom: 2px solid #0E902D;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 3.2rem;
+}
+
+input[type=text],
+input[type=email] {
+  width: calc(50% - 14px);
+  margin-bottom: 55px;
+  padding-left: 25px;
+  padding-bottom: 12px;
+}
+
+input[type=text] {
+  margin-right: 28px;
+}
+
+textarea {
+  border: 2px solid #0E902D;
+  height: 260px;
+  margin-bottom: 55px;
+  padding: 45px 25px;
+  resize: none;
+  width: 100%;
 }
 
 .greenStyling {
@@ -374,6 +412,10 @@ ul {
 .blog .comment h2 {
   color: #074115;
 }
+.blog h2 {
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
 .blog header {
   background-image: url(../assets/blog-header-1.jpg);
   background-position: bottom left;
@@ -407,12 +449,13 @@ ul {
   left: 0;
   top: -20px;
 }
-.blog .leftColumn h2 {
-  font-size: 2rem;
-  line-height: 3.2rem;
-}
 .blog .recentPosts a {
   color: black;
+}
+.blog .recentPosts li {
+  color: #0E902D;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 .blog .rightColumn {
   width: 50%;
@@ -439,9 +482,50 @@ ul {
   font-size: 4.3rem;
   letter-spacing: 1.3px;
 }
+.blog .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .blog .comment h2 {
   font-size: 2rem;
   line-height: 3.2rem;
+}
+.blog .textContainer {
+  width: calc(100% - 92px);
+}
+.blog form {
+  padding: 80px 0 70px;
+  position: relative;
+}
+.blog input, .blog textarea {
+  background: #f0EFED;
+  border: none;
+  border-bottom: 2px solid #0E902D;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 3.2rem;
+}
+.blog input[type=text],
+.blog input[type=email] {
+  width: calc(50% - 14px);
+  margin-bottom: 55px;
+  padding-left: 25px;
+  padding-bottom: 12px;
+}
+.blog input[type=text] {
+  margin-right: 28px;
+}
+.blog textarea {
+  border: 2px solid #0E902D;
+  height: 260px;
+  margin-bottom: 55px;
+  padding: 45px 25px;
+  resize: none;
+  width: 100%;
+}
+.blog .greenStyling {
+  width: 100%;
 }
 
 .contact header {
