@@ -436,6 +436,8 @@ textarea {
 .blog .leftColumn {
   width: 40%;
   height: 765px;
+  padding-left: 10%;
+  padding-right: 5%;
 }
 .blog .leftColumn img {
   max-width: 513px;
@@ -444,11 +446,19 @@ textarea {
   top: -20px;
 }
 .blog .leftColumn .imgContainer {
-  width: 100%;
+  width: 128%;
   max-width: 513px;
   max-height: 433px;
   position: relative;
-  left: 0;
+  z-index: 1;
+  right: 40%;
+}
+.blog .leftColumn .whiteBackground {
+  background: white;
+  padding: 410px 20px 40px;
+  position: relative;
+  left: -20px;
+  top: -410px;
 }
 .blog .recentPosts a {
   color: black;
