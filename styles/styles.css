@@ -434,23 +434,21 @@ textarea {
   position: relative;
 }
 .blog .leftColumn {
-  background-color: white;
-  width: 25%;
-  margin-left: calc(10% - 20px);
-  margin-right: 5%;
-  padding: 20px;
+  width: 40%;
   height: 765px;
 }
-.blog .leftColumn .imgContainer {
-  height: 320px;
-}
 .blog .leftColumn img {
-  width: 32%;
   max-width: 513px;
   max-height: 433px;
-  position: absolute;
   left: 0;
   top: -20px;
+}
+.blog .leftColumn .imgContainer {
+  width: 100%;
+  max-width: 513px;
+  max-height: 433px;
+  position: relative;
+  left: 0;
 }
 .blog .recentPosts a {
   color: black;
@@ -463,15 +461,16 @@ textarea {
   list-style-position: inside;
 }
 .blog .rightColumn {
-  width: 50%;
-  margin-right: 10%;
+  width: 60%;
+  position: relative;
+  padding-right: 10%;
 }
 .blog .rightColumn .currentPostImage {
-  width: calc(61% - 10px);
+  width: calc(120% - 14px);
   max-width: 975px;
   max-height: 646px;
-  position: absolute;
-  right: 0;
+  position: relative;
+  right: -14px;
   top: -430px;
 }
 .blog .rightColumn .currentPostImage img {
@@ -495,6 +494,7 @@ textarea {
   width: 92px;
 }
 .blog .currentPost {
+  margin-top: -420px;
   position: relative;
 }
 .blog .currentPost h2 {
@@ -511,7 +511,7 @@ textarea {
   background-color: #F8E71C;
 }
 .blog .currentPost .textContainer {
-  padding: 180px 50px 50px 50px;
+  padding: 50px 0 50px 50px;
   background: #f0EFED;
   position: relative;
   z-index: 1;

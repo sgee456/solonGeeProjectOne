@@ -32,24 +32,25 @@
     }
 
     .leftColumn {
-        background-color: white;
-        width: 25%;
-        margin-left: calc(10% - 20px);
-        margin-right: 5%;
-        padding: 20px;
+        width: 40%;
         height: 765px;
-
-        .imgContainer {
-            height: 320px;
-        }
+        // padding-left: 10%;
+        // padding-right: 5%;
 
         img {
-            width: 32%;
             max-width: 513px;
             max-height: 433px;
-            position: absolute;
+            // position: absolute;
             left: 0;
             top: -20px;
+        }
+
+        .imgContainer {
+            width: 100%;
+            max-width: 513px;
+            max-height: 433px;
+            position: relative;
+            left: 0;
         }
     }
 
@@ -68,15 +69,16 @@
     }
 
     .rightColumn {
-        width: 50%;
-        margin-right: 10%;
+        width: 60%;
+        position: relative;
+        padding-right: 10%;
 
         .currentPostImage {
-            width: calc(61% - 10px);
+            width: calc(120% - 14px);
             max-width: 975px;
             max-height: 646px;
-            position: absolute;
-            right: 0;
+            position: relative;
+            right: -14px;
             top: -430px;
         }
 
@@ -100,6 +102,7 @@
     }
 
     .currentPost {
+        margin-top: -420px;
         position: relative;
 
         h2 {
@@ -112,7 +115,7 @@
         }
 
         .textContainer {
-            padding: 180px 50px 50px 50px;
+            padding: 50px 0 50px 50px;
             background: $offWhite;
             position: relative;
             z-index: 1;
