@@ -34,9 +34,10 @@
         margin-left: calc(10% - 20px);
         margin-right: 5%;
         padding: 20px;
+        height: 765px;
 
         .imgContainer {
-            height: 433px;
+            height: 320px;
         }
 
         img {
@@ -108,11 +109,15 @@
         }
 
         .textContainer {
-            padding-top: 180px;
+            padding: 180px 50px 50px 50px;
             background: $offWhite;
             position: relative;
             z-index: 1;
         }
+    }
+
+    .commentsSection {
+        padding: 50px;
     }
 
     .comment {
@@ -140,7 +145,7 @@
     input[type="email"] {
         // width: calc(50% - 14px);
         margin-bottom: 55px;
-        padding-left: 25px;
+        padding-left: 50px;
         padding-bottom: 12px;
     }
 

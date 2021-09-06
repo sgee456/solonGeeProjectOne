@@ -322,7 +322,6 @@ input[type=text],
 input[type=email] {
   width: calc(50% - 14px);
   margin-bottom: 55px;
-  padding-left: 25px;
   padding-bottom: 12px;
 }
 
@@ -437,9 +436,10 @@ textarea {
   margin-left: calc(10% - 20px);
   margin-right: 5%;
   padding: 20px;
+  height: 765px;
 }
 .blog .leftColumn .imgContainer {
-  height: 433px;
+  height: 320px;
 }
 .blog .leftColumn img {
   width: 32%;
@@ -508,10 +508,13 @@ textarea {
   background-color: #F8E71C;
 }
 .blog .currentPost .textContainer {
-  padding-top: 180px;
+  padding: 180px 50px 50px 50px;
   background: #f0EFED;
   position: relative;
   z-index: 1;
+}
+.blog .commentsSection {
+  padding: 50px;
 }
 .blog .comment {
   display: -webkit-box;
@@ -534,7 +537,7 @@ textarea {
 .blog input[type=text],
 .blog input[type=email] {
   margin-bottom: 55px;
-  padding-left: 25px;
+  padding-left: 50px;
   padding-bottom: 12px;
 }
 .blog textarea {
