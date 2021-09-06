@@ -52,6 +52,8 @@
     .recentPosts {
         a {
             color: black;
+            position: relative;
+            top: 4px;
         }
 
         li {
@@ -66,16 +68,22 @@
         margin-right: 10%;
 
         .currentPostImage {
-            height: 646px;
-        }
-
-        .currentPostImage img {
             width: 61%;
             max-width: 975px;
             max-height: 646px;
             position: absolute;
             right: 0;
             top: -430px;
+        }
+
+        .currentPostImage img {
+            position: relative;
+            z-index: 3;
+        }
+
+        .currentPostImage::before {
+            @include backgroundBox(-20px, -20px, calc(100% - 10px), calc(100% - 20px));
+            z-index: 2;
         }
 
         h3 {
@@ -88,9 +96,22 @@
     }
 
     .currentPost {
+        position: relative;
+
         h2 {
             font-size: 4.3rem;
             letter-spacing: 1.3px;
+        }
+
+        &::before {
+            @include backgroundBox(-12px, -12px);
+        }
+
+        .textContainer {
+            padding-top: 180px;
+            background: $offWhite;
+            position: relative;
+            z-index: 1;
         }
     }
 
@@ -101,45 +122,36 @@
             font-size: 2rem;
             line-height: 3.2rem;
         }
-    }
 
-    .textContainer {
-        width: calc(100% - 92px);
+        .textContainer {
+            width: calc(100% - 92px);
+        }
     }
 
     form {
         padding: 80px 0 70px;
-        position: relative;
     }
 
     input, textarea {
         background: $offWhite;
-        border: none;
-        border-bottom: 2px solid $green;
-        font-size: 2rem;
-        font-weight: 100;
-        line-height: 3.2rem;
     }
 
     input[type="text"],
     input[type="email"] {
-        width: calc(50% - 14px);
+        // width: calc(50% - 14px);
         margin-bottom: 55px;
         padding-left: 25px;
         padding-bottom: 12px;
     }
 
     input[type="text"] {
-        margin-right: 28px;
+        // margin-right: 28px;
     }
 
     textarea {
-        border: 2px solid $green;
         height: 260px;
         margin-bottom: 55px;
         padding: 45px 25px;
-        resize: none;
-        width: 100%;
     }
 
     .greenStyling {

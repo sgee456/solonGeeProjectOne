@@ -451,6 +451,8 @@ textarea {
 }
 .blog .recentPosts a {
   color: black;
+  position: relative;
+  top: 4px;
 }
 .blog .recentPosts li {
   color: #0E902D;
@@ -462,9 +464,6 @@ textarea {
   margin-right: 10%;
 }
 .blog .rightColumn .currentPostImage {
-  height: 646px;
-}
-.blog .rightColumn .currentPostImage img {
   width: 61%;
   max-width: 975px;
   max-height: 646px;
@@ -472,15 +471,47 @@ textarea {
   right: 0;
   top: -430px;
 }
+.blog .rightColumn .currentPostImage img {
+  position: relative;
+  z-index: 3;
+}
+.blog .rightColumn .currentPostImage::before {
+  content: "";
+  width: calc(100% - 10px);
+  height: calc(100% - 20px);
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  background-color: #F8E71C;
+  z-index: 2;
+}
 .blog .rightColumn h3 {
   font-style: italic;
 }
 .blog .rightColumn .profileImg {
   width: 92px;
 }
+.blog .currentPost {
+  position: relative;
+}
 .blog .currentPost h2 {
   font-size: 4.3rem;
   letter-spacing: 1.3px;
+}
+.blog .currentPost::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -12px;
+  bottom: -12px;
+  background-color: #F8E71C;
+}
+.blog .currentPost .textContainer {
+  padding-top: 180px;
+  background: #f0EFED;
+  position: relative;
+  z-index: 1;
 }
 .blog .comment {
   display: -webkit-box;
@@ -491,38 +522,25 @@ textarea {
   font-size: 2rem;
   line-height: 3.2rem;
 }
-.blog .textContainer {
+.blog .comment .textContainer {
   width: calc(100% - 92px);
 }
 .blog form {
   padding: 80px 0 70px;
-  position: relative;
 }
 .blog input, .blog textarea {
   background: #f0EFED;
-  border: none;
-  border-bottom: 2px solid #0E902D;
-  font-size: 2rem;
-  font-weight: 100;
-  line-height: 3.2rem;
 }
 .blog input[type=text],
 .blog input[type=email] {
-  width: calc(50% - 14px);
   margin-bottom: 55px;
   padding-left: 25px;
   padding-bottom: 12px;
 }
-.blog input[type=text] {
-  margin-right: 28px;
-}
 .blog textarea {
-  border: 2px solid #0E902D;
   height: 260px;
   margin-bottom: 55px;
   padding: 45px 25px;
-  resize: none;
-  width: 100%;
 }
 .blog .greenStyling {
   width: 100%;
