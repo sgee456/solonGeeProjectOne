@@ -202,15 +202,6 @@ template {
   display: none;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: "";
-  clear: both;
-  height: 0;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -244,7 +235,7 @@ body {
   font-weight: 700;
 }
 
-p {
+p, h3 {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -378,6 +369,11 @@ ul {
   left: 150px;
 }
 
+.blog main a,
+.blog h3,
+.blog .comment h2 {
+  color: #074115;
+}
 .blog header {
   background-image: url(../assets/blog-header-1.jpg);
   background-position: bottom left;
@@ -396,13 +392,12 @@ ul {
 .blog .leftColumn {
   background-color: white;
   width: 25%;
-  margin-left: 10%;
+  margin-left: calc(10% - 20px);
   margin-right: 5%;
+  padding: 20px;
 }
 .blog .leftColumn .imgContainer {
   height: 433px;
-  max-width: 513px;
-  max-height: 433px;
 }
 .blog .leftColumn img {
   width: 32%;
@@ -411,6 +406,13 @@ ul {
   position: absolute;
   left: 0;
   top: -20px;
+}
+.blog .leftColumn h2 {
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+.blog .recentPosts a {
+  color: black;
 }
 .blog .rightColumn {
   width: 50%;
@@ -427,8 +429,19 @@ ul {
   right: 0;
   top: -430px;
 }
+.blog .rightColumn h3 {
+  font-style: italic;
+}
 .blog .rightColumn .profileImg {
   width: 92px;
+}
+.blog .currentPost h2 {
+  font-size: 4.3rem;
+  letter-spacing: 1.3px;
+}
+.blog .comment h2 {
+  font-size: 2rem;
+  line-height: 3.2rem;
 }
 
 .contact header {

@@ -1,5 +1,11 @@
 .blog {
 
+    main a,
+    h3,
+    .comment h2 {
+        color: $forestGreen;
+    }
+
     header{
         background-image: url(../assets/blog-header-1.jpg);
         background-position: bottom left;
@@ -9,6 +15,7 @@
     main {
         background-color: $offWhite;
         padding-top: 135px;
+
     }
 
     .maxWrapper {
@@ -19,14 +26,12 @@
     .leftColumn {
         background-color: white;
         width: 25%;
-        margin-left: 10%;
+        margin-left: calc(10% - 20px);
         margin-right: 5%;
+        padding: 20px;
 
         .imgContainer {
-            // width: 32%;
             height: 433px;
-            max-width: 513px;
-            max-height: 433px;
         }
 
         img {
@@ -37,6 +42,15 @@
             left: 0;
             top: -20px;
         }
+
+        h2 {
+            font-size: 2rem;
+            line-height: 3.2rem;
+        }
+    }
+
+    .recentPosts a {
+        color: black;
     }
 
     .rightColumn {
@@ -56,8 +70,26 @@
             top: -430px;
         }
 
+        h3 {
+            font-style: italic;
+        }
+
         .profileImg {
             width: 92px;
+        }
+    }
+
+    .currentPost {
+        h2 {
+            font-size: 4.3rem;
+            letter-spacing: 1.3px;
+        }
+    }
+
+    .comment {
+        h2 {
+            font-size: 2rem;
+            line-height: 3.2rem;
         }
     }
 }
