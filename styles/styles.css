@@ -243,7 +243,9 @@ p, h3, .recentPosts a {
   margin: 0;
 }
 
-button, a {
+button,
+a,
+.siteNav p {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -284,10 +286,13 @@ a {
 .siteNav li:nth-child(2) {
   display: none;
 }
-.siteNav a {
+.siteNav a, .siteNav p {
   color: white;
   font-weight: 400;
   text-transform: uppercase;
+}
+.siteNav p {
+  color: #F8E71C;
 }
 
 img {

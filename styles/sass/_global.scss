@@ -36,7 +36,9 @@ p, h3, .recentPosts a {
     margin: 0;
 }
 
-button, a {
+button,
+a,
+.siteNav p {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 2rem;
@@ -78,10 +80,14 @@ a {
         display: none;
     }
 
-    a {
+    a, p {
         color: white;
         font-weight: 400;
         text-transform: uppercase;
+    }
+
+    p {
+        color: $sunnyYellow;
     }
 }
 
