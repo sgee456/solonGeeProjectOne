@@ -455,6 +455,9 @@ textarea {
 .blog .leftColumn .recentPostsArticle {
   padding: 20px;
 }
+.blog .aboutArticle a {
+  font-style: italic;
+}
 .blog .recentPosts a {
   color: black;
   position: relative;
@@ -493,9 +496,7 @@ textarea {
 }
 .blog .rightColumn h3 {
   font-style: italic;
-}
-.blog .rightColumn .profileImg {
-  width: 92px;
+  margin-bottom: 60px;
 }
 .blog .currentPost {
   margin-top: -420px;
@@ -504,6 +505,7 @@ textarea {
 .blog .currentPost h2 {
   font-size: 4.3rem;
   letter-spacing: 1.3px;
+  margin-bottom: 20px;
 }
 .blog .currentPost::before {
   content: "";
@@ -521,16 +523,29 @@ textarea {
   z-index: 1;
 }
 .blog .commentsSection {
-  padding: 50px;
+  padding: 10px 50px 20px 50px;
+}
+.blog .commentsSection .commentHeading {
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 .blog .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+.blog .comment:first-of-type {
+  margin-bottom: 115px;
+}
 .blog .comment h2 {
   font-size: 2rem;
   line-height: 3.2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.blog .comment .profileImg {
+  width: 92px;
+  margin-right: 40px;
 }
 .blog .comment .textContainer {
   width: calc(100% - 92px);

@@ -57,6 +57,10 @@
         }
     }
 
+    .aboutArticle a {
+        font-style: italic;
+    }
+
     .recentPosts {
         a {
             color: black;
@@ -96,10 +100,7 @@
 
         h3 {
             font-style: italic;
-        }
-
-        .profileImg {
-            width: 92px;
+            margin-bottom: 60px;
         }
     }
 
@@ -110,6 +111,7 @@
         h2 {
             font-size: 4.3rem;
             letter-spacing: 1.3px;
+            margin-bottom: 20px;
         }
 
         &::before {
@@ -125,15 +127,31 @@
     }
 
     .commentsSection {
-        padding: 50px;
+        padding: 10px 50px 20px 50px;
+
+        .commentHeading {
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
     }
 
     .comment {
         display: flex;
+        
+        &:first-of-type {
+            margin-bottom: 115px;
+        }
 
         h2 {
             font-size: 2rem;
             line-height: 3.2rem;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .profileImg {
+            width: 92px;
+            margin-right: 40px;
         }
 
         .textContainer {
