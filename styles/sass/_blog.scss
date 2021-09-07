@@ -33,33 +33,27 @@
 
     .leftColumn {
         width: 40%;
-        height: 765px;
         padding-left: 10%;
         padding-right: 5%;
 
-        img {
-            max-width: 513px;
-            max-height: 433px;
-            // position: absolute;
-            left: 0;
-            top: -20px;
-        }
-
         .imgContainer {
-            width: 128%;
-            max-width: 513px;
-            max-height: 433px;
+            width: 131%;
+            max-width: 519px;
             position: relative;
+            left: calc(-40% + 20px);
+            top: -20px;
             z-index: 1;
-            right: 40%;
         }
 
         .whiteBackground {
             background: white;
-            padding: 410px 20px 40px;
             position: relative;
             left: -20px;
-            top: -410px;
+        }
+
+        .aboutArticle,
+        .recentPostsArticle {
+            padding: 20px;
         }
     }
 
@@ -85,7 +79,6 @@
         .currentPostImage {
             width: calc(120% - 14px);
             max-width: 975px;
-            max-height: 646px;
             position: relative;
             right: -14px;
             top: -430px;

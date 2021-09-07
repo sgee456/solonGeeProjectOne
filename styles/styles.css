@@ -435,30 +435,25 @@ textarea {
 }
 .blog .leftColumn {
   width: 40%;
-  height: 765px;
   padding-left: 10%;
   padding-right: 5%;
 }
-.blog .leftColumn img {
-  max-width: 513px;
-  max-height: 433px;
-  left: 0;
-  top: -20px;
-}
 .blog .leftColumn .imgContainer {
-  width: 128%;
-  max-width: 513px;
-  max-height: 433px;
+  width: 131%;
+  max-width: 519px;
   position: relative;
+  left: calc(-40% + 20px);
+  top: -20px;
   z-index: 1;
-  right: 40%;
 }
 .blog .leftColumn .whiteBackground {
   background: white;
-  padding: 410px 20px 40px;
   position: relative;
   left: -20px;
-  top: -410px;
+}
+.blog .leftColumn .aboutArticle,
+.blog .leftColumn .recentPostsArticle {
+  padding: 20px;
 }
 .blog .recentPosts a {
   color: black;
@@ -478,7 +473,6 @@ textarea {
 .blog .rightColumn .currentPostImage {
   width: calc(120% - 14px);
   max-width: 975px;
-  max-height: 646px;
   position: relative;
   right: -14px;
   top: -430px;
