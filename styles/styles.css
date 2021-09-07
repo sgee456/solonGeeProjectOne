@@ -660,38 +660,11 @@ textarea {
 }
 .contact form {
   background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 80px 70px 70px;
-  position: relative;
-}
-.contact input, .contact textarea {
-  border: none;
-  border-bottom: 2px solid #0E902D;
-  font-size: 2rem;
-  font-weight: 100;
-  line-height: 3.2rem;
 }
 .contact input[type=text],
 .contact input[type=email] {
-  width: calc(50% - 14px);
-  margin-bottom: 55px;
   padding-left: 25px;
-  padding-bottom: 12px;
-}
-.contact input[type=text] {
-  margin-right: 28px;
-}
-.contact textarea {
-  border: 2px solid #0E902D;
-  height: 260px;
-  margin-bottom: 55px;
-  padding: 45px 25px;
-  resize: none;
-  width: 100%;
 }
 .contact .greenStyling {
   width: 100%;
