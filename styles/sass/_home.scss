@@ -65,6 +65,17 @@
     }
 
     .furtherInfo {
+        h2 {
+            font-size: 3.2rem;
+            letter-spacing: 1px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .greenStyling {
+            margin-top: 35px;
+        }
+
         .upcomingWorkshops,
         .uniquePlants {
             display: flex;
@@ -76,7 +87,7 @@
         }
 
         .textContainer {
-            width: calc(50% - 106px);
+            width: calc(40% - 106px);
         }
 
         .upcomingWorkshops {
@@ -95,8 +106,13 @@
                 }
             }
 
+            h2 {
+                margin-top: 125px;
+            }
+
             .textContainer {
                 margin-left: 106px;
+                margin-right: 10%;
             }
         }
 
@@ -118,7 +134,12 @@
                 }
             }
 
+            h2 {
+                margin-top: 70px;
+            }
+
             .textContainer {
+                margin-left: 10%;
                 margin-right: 106px;
             }
         }

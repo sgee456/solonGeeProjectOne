@@ -441,6 +441,15 @@ textarea {
 .home .plantedIntro .greenStyling {
   margin: 40px 0 220px;
 }
+.home .furtherInfo h2 {
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.home .furtherInfo .greenStyling {
+  margin-top: 35px;
+}
 .home .furtherInfo .upcomingWorkshops,
 .home .furtherInfo .uniquePlants {
   display: -webkit-box;
@@ -451,7 +460,7 @@ textarea {
   width: calc(50% - 126px);
 }
 .home .furtherInfo .textContainer {
-  width: calc(50% - 106px);
+  width: calc(40% - 106px);
 }
 .home .furtherInfo .upcomingWorkshops .imgContainer {
   margin-right: 126px;
@@ -471,8 +480,12 @@ textarea {
   bottom: -20px;
   background-color: #F8E71C;
 }
+.home .furtherInfo .upcomingWorkshops h2 {
+  margin-top: 125px;
+}
 .home .furtherInfo .upcomingWorkshops .textContainer {
   margin-left: 106px;
+  margin-right: 10%;
 }
 .home .furtherInfo .uniquePlants {
   text-align: right;
@@ -495,7 +508,11 @@ textarea {
   bottom: -20px;
   background-color: #F8E71C;
 }
+.home .furtherInfo .uniquePlants h2 {
+  margin-top: 70px;
+}
 .home .furtherInfo .uniquePlants .textContainer {
+  margin-left: 10%;
   margin-right: 106px;
 }
 .home .middleNav {
