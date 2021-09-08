@@ -1,14 +1,135 @@
 .home {
+    header {
+        background-image: url(../assets/home-image-1.jpg);
+        height: 755px;
+        position: relative;
+        z-index: 1;
+
+        .maxWrapper {
+            position: relative;
+        }
+
+        .headerBox {
+            width: 44%;
+            position: absolute;
+            bottom: -60px;
+            right: 0;
+            z-index: 0;
+        }
+    }
+
+    .siteNav {
+        background-color: transparent;
+    }
+
+    .flexContainer {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     h1 {
+        color: white;
         font-weight: 400;
         font-size: 16.6rem;
+        margin-left: 70px;
+        margin-top: 210px;
     }
 
     .yellowText {
         display: block;
         color: $sunnyYellow;
     }
+
+    .plantedIntro {
+        background: $offWhite;
+        padding-top: 200px;
+        text-align: center;
+
+        .wrapper {
+            width: 66%;
+        }
+
+        h2 {
+            font-size: 5.63rem;
+            text-align: center;
+            letter-spacing: 1.3px;
+            margin-bottom: 10px;
+        }
+
+        .greenStyling {
+            margin: 40px 0 220px;
+        }
+    }
+
+    .furtherInfo {
+        .upcomingWorkshops,
+        .uniquePlants {
+            display: flex;
+
+        }
+
+        .imgContainer {
+            width: calc(50% - 126px);
+        }
+
+        .textContainer {
+            width: calc(50% - 106px);
+        }
+
+        .upcomingWorkshops {
+            .imgContainer {
+                margin-right: 126px;
+                position: relative;
+                top: -45px;
+
+                img {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                &::before {
+                    @include backgroundBox(20px, -20px);
+                }
+            }
+
+            .textContainer {
+                margin-left: 106px;
+            }
+        }
+
+        .uniquePlants {
+            text-align: right;
+
+            .imgContainer {
+                margin-left: 126px;
+                position: relative;
+                bottom: -50px;
+
+                img {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                &::before {
+                    @include backgroundBox(-20px, -20px);
+                }
+            }
+
+            .textContainer {
+                margin-right: 106px;
+            }
+        }
+
+    }
+
+    .middleNav {
+        background: $offWhite;
+    }
+
+
 
     .aboutFounder {
 
