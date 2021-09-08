@@ -1,0 +1,20 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    // GLOBAL TYPOGRAPHY
+    html {
+        font-size: clamp(56.25%, 1rem + 2vw, 62.5%);
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    // GLOBAL TYPOGRAPHY
+    html {
+        font-size: 56.25%;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    // GLOBAL TYPOGRAPHY
+}
