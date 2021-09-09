@@ -1,3 +1,16 @@
+@media (max-width: 1200px) {
+    //BLOG
+
+    .blog {
+        .currentPost {
+            h2 {
+                line-height: 5.3rem;
+            }
+        }
+    }
+}
+
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
     // GLOBAL TYPOGRAPHY

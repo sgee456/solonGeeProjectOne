@@ -620,11 +620,14 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .blog .leftColumn {
-  width: 40%;
+  width: 38%;
   padding-left: 10%;
-  padding-right: 5%;
+  padding-right: 3%;
 }
 .blog .leftColumn .imgContainer {
   width: 131%;
@@ -640,10 +643,10 @@ textarea {
   left: -20px;
 }
 .blog .leftColumn .aboutArticle {
-  padding: 20px;
+  padding: 20px 50px 20px 20px;
 }
 .blog .leftColumn .recentPostsArticle {
-  padding: 20px 20px 40px;
+  padding: 20px 50px 40px 20px;
 }
 .blog .aboutArticle a {
   font-style: italic;
@@ -659,13 +662,13 @@ textarea {
   list-style-position: inside;
 }
 .blog .rightColumn {
-  width: 60%;
+  width: 62%;
   position: relative;
   padding-right: 10%;
 }
 .blog .rightColumn .currentPostImage {
-  width: calc(120% - 14px);
-  max-width: 975px;
+  width: calc(119.2% - 14px);
+  max-width: 978px;
   position: relative;
   right: -14px;
   top: -430px;
@@ -860,6 +863,11 @@ textarea {
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .blog .currentPost h2 {
+    line-height: 5.3rem;
+  }
+}
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .home h1 {

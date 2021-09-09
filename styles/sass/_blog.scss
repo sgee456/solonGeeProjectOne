@@ -29,12 +29,13 @@
     .maxWrapper {
         display: flex;
         position: relative;
+        justify-content: space-between;
     }
 
     .leftColumn {
-        width: 40%;
+        width: 38%;
         padding-left: 10%;
-        padding-right: 5%;
+        padding-right: 3%;
 
         .imgContainer {
             width: 131%;
@@ -52,11 +53,11 @@
         }
 
         .aboutArticle {
-            padding: 20px;
+            padding: 20px 50px 20px 20px;
         }
 
         .recentPostsArticle {
-            padding: 20px 20px 40px;
+            padding: 20px 50px 40px 20px;
         }
     }
 
@@ -79,13 +80,13 @@
     }
 
     .rightColumn {
-        width: 60%;
+        width: 62%;
         position: relative;
         padding-right: 10%;
 
         .currentPostImage {
-            width: calc(120% - 14px);
-            max-width: 975px;
+            width: calc(119.2% - 14px);
+            max-width: 978px;
             position: relative;
             right: -14px;
             top: -430px;
