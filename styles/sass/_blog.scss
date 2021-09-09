@@ -51,9 +51,12 @@
             left: -20px;
         }
 
-        .aboutArticle,
-        .recentPostsArticle {
+        .aboutArticle {
             padding: 20px;
+        }
+
+        .recentPostsArticle {
+            padding: 20px 20px 40px;
         }
     }
 

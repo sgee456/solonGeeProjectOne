@@ -639,9 +639,11 @@ textarea {
   position: relative;
   left: -20px;
 }
-.blog .leftColumn .aboutArticle,
-.blog .leftColumn .recentPostsArticle {
+.blog .leftColumn .aboutArticle {
   padding: 20px;
+}
+.blog .leftColumn .recentPostsArticle {
+  padding: 20px 20px 40px;
 }
 .blog .aboutArticle a {
   font-style: italic;
@@ -867,6 +869,10 @@ textarea {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+
   .siteNav ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
