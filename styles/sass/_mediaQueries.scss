@@ -1,20 +1,128 @@
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
     // GLOBAL TYPOGRAPHY
-    html {
-        font-size: clamp(56.25%, 1rem + 2vw, 62.5%);
+    .home {
+        h1 {
+            // https://css-tricks.com/simplified-fluid-typography/
+            // I used this, but I am not sure if there's a better/ more
+            // responsive way to do it
+            font-size: calc(6rem + 106 * ((100vw - 768px) / 172));
+            margin-left: calc(10px + 70 * ((100vw - 768px) / 172));
+        }
     }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    // GLOBAL TYPOGRAPHY
+    // GLOBAL TYPOGRAPHY/ ElEMENTS
     html {
-        font-size: 56.25%;
+        // font-size: 56.25%;
     }
+
+    .siteNav {
+        ul {
+            justify-content: space-between;
+        }
+
+        li:nth-child(2) {
+            display: block;
+        }
+
+        li:nth-child(n + 3) {
+            // copied from sr-only
+            position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;
+        }
+    }
+    //HOME
+    .home {
+        h1 {
+            font-size: 6rem;
+            margin-left: 10px;
+        }
+        .furtherInfo {
+            .upcomingWorkshops,
+            .uniquePlants {
+                flex-direction: column;
+            }
+    
+            .imgContainer,
+            .textContainer {
+                width: 100%;
+            }
+
+            .textContainer {
+                text-align: center;
+                margin: 0;
+            }
+
+            .imageOne {
+                margin-right: 0;
+
+                img {
+                    box-shadow: 0 20px 0 $sunnyYellow;
+                }
+            }
+
+            .textOne {
+                margin: 0;
+            }
+
+            .imageTwo {
+                margin-left: 0;
+                order: -1;
+
+                img {
+                    box-shadow: 0 20px 0 $sunnyYellow;
+                }
+            }
+
+            .textTwo {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        .middleNav {
+            li {
+                width: 100%;
+            }
+        }
+
+        .aboutFounder {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .imgContainer {
+                margin: 0 auto;
+            }
+
+            .textContainer {
+                width: 100%;
+                margin-top: 80px;
+                text-align: center;
+            }
+        }
+
+        .imgGallery {
+            padding: 50px 0;
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            li:nth-child(n + 2) {
+                margin-top: 50px;
+            }
+        }
+    }  
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
     // GLOBAL TYPOGRAPHY
+
+    //HOME
+   
 }

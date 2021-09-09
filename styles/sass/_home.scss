@@ -90,58 +90,48 @@
             width: calc(40% - 106px);
         }
 
-        .upcomingWorkshops {
-            .imgContainer {
-                margin-right: 126px;
+        .imageOne {
+            margin-right: 126px;
+            position: relative;
+            top: -45px;
+
+            img {
                 position: relative;
-                top: -45px;
-
-                img {
-                    position: relative;
-                    z-index: 1;
-                }
-
-                &::before {
-                    @include backgroundBox(20px, -20px);
-                }
+                box-shadow: 30px 30px 0 -10px $sunnyYellow;
             }
+        }
+        
+        .textOne {
+            margin-left: 106px;
+            margin-right: 10%;
 
             h2 {
                 margin-top: 125px;
             }
+        }
 
-            .textContainer {
-                margin-left: 106px;
-                margin-right: 10%;
+        .imageTwo {
+            margin-left: 126px;
+            position: relative;
+            bottom: -50px;
+
+            img {
+                position: relative;
+                box-shadow: -30px 30px 0 -10px $sunnyYellow;
+                }
+        }
+
+        .textTwo {
+            margin-left: 10%;
+            margin-right: 106px;
+
+            h2 {
+                margin-top: 70px;
             }
         }
 
         .uniquePlants {
             text-align: right;
-
-            .imgContainer {
-                margin-left: 126px;
-                position: relative;
-                bottom: -50px;
-
-                img {
-                    position: relative;
-                    z-index: 1;
-                }
-
-                &::before {
-                    @include backgroundBox(-20px, -20px);
-                }
-            }
-
-            h2 {
-                margin-top: 70px;
-            }
-
-            .textContainer {
-                margin-left: 10%;
-                margin-right: 106px;
-            }
         }
 
     }
@@ -202,18 +192,13 @@
         }
 
         .imgContainer {
-            width: 304px;
-            height: 304px;
+            max-width: 304px;
             position: relative;
         }
 
         .imgContainer img {
-            position: relative;
-            z-index: 1; 
-        }
-
-        .imgContainer::before {
-            @include backgroundBox(20px, -20px);
+            position: relative; 
+            box-shadow: 20px 20px $sunnyYellow;
         }
 
         .textContainer {
@@ -241,7 +226,7 @@
         }
 
         .imgContainer {
-            width: 400px;
+            max-width: 400px;
             margin: 0 20px;
         }
     }

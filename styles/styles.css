@@ -462,58 +462,42 @@ textarea {
 .home .furtherInfo .textContainer {
   width: calc(40% - 106px);
 }
-.home .furtherInfo .upcomingWorkshops .imgContainer {
+.home .furtherInfo .imageOne {
   margin-right: 126px;
   position: relative;
   top: -45px;
 }
-.home .furtherInfo .upcomingWorkshops .imgContainer img {
+.home .furtherInfo .imageOne img {
   position: relative;
-  z-index: 1;
+  -webkit-box-shadow: 30px 30px 0 -10px #F8E71C;
+          box-shadow: 30px 30px 0 -10px #F8E71C;
 }
-.home .furtherInfo .upcomingWorkshops .imgContainer::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 20px;
-  bottom: -20px;
-  background-color: #F8E71C;
-}
-.home .furtherInfo .upcomingWorkshops h2 {
-  margin-top: 125px;
-}
-.home .furtherInfo .upcomingWorkshops .textContainer {
+.home .furtherInfo .textOne {
   margin-left: 106px;
   margin-right: 10%;
 }
-.home .furtherInfo .uniquePlants {
-  text-align: right;
+.home .furtherInfo .textOne h2 {
+  margin-top: 125px;
 }
-.home .furtherInfo .uniquePlants .imgContainer {
+.home .furtherInfo .imageTwo {
   margin-left: 126px;
   position: relative;
   bottom: -50px;
 }
-.home .furtherInfo .uniquePlants .imgContainer img {
+.home .furtherInfo .imageTwo img {
   position: relative;
-  z-index: 1;
+  -webkit-box-shadow: -30px 30px 0 -10px #F8E71C;
+          box-shadow: -30px 30px 0 -10px #F8E71C;
 }
-.home .furtherInfo .uniquePlants .imgContainer::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: -20px;
-  bottom: -20px;
-  background-color: #F8E71C;
-}
-.home .furtherInfo .uniquePlants h2 {
-  margin-top: 70px;
-}
-.home .furtherInfo .uniquePlants .textContainer {
+.home .furtherInfo .textTwo {
   margin-left: 10%;
   margin-right: 106px;
+}
+.home .furtherInfo .textTwo h2 {
+  margin-top: 70px;
+}
+.home .furtherInfo .uniquePlants {
+  text-align: right;
 }
 .home .middleNav {
   background: #f0EFED;
@@ -575,22 +559,13 @@ textarea {
           justify-content: space-between;
 }
 .home .aboutFounder .imgContainer {
-  width: 304px;
-  height: 304px;
+  max-width: 304px;
   position: relative;
 }
 .home .aboutFounder .imgContainer img {
   position: relative;
-  z-index: 1;
-}
-.home .aboutFounder .imgContainer::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 20px;
-  bottom: -20px;
-  background-color: #F8E71C;
+  -webkit-box-shadow: 20px 20px #F8E71C;
+          box-shadow: 20px 20px #F8E71C;
 }
 .home .aboutFounder .textContainer {
   width: calc(100% - 435px);
@@ -615,7 +590,7 @@ textarea {
           justify-content: center;
 }
 .home .imgGallery .imgContainer {
-  width: 400px;
+  max-width: 400px;
   margin: 0 20px;
 }
 
@@ -885,14 +860,109 @@ textarea {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  html {
-    font-size: clamp(56.25%, 1rem + 2vw, 62.5%);
+  .home h1 {
+    font-size: calc(6rem + 106 * ((100vw - 768px) / 172));
+    margin-left: calc(10px + 70 * ((100vw - 768px) / 172));
   }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  html {
-    font-size: 56.25%;
+  .siteNav ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .siteNav li:nth-child(2) {
+    display: block;
+  }
+  .siteNav li:nth-child(n+3) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .home h1 {
+    font-size: 6rem;
+    margin-left: 10px;
+  }
+  .home .furtherInfo .upcomingWorkshops,
+.home .furtherInfo .uniquePlants {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .furtherInfo .imgContainer,
+.home .furtherInfo .textContainer {
+    width: 100%;
+  }
+  .home .furtherInfo .textContainer {
+    text-align: center;
+    margin: 0;
+  }
+  .home .furtherInfo .imageOne {
+    margin-right: 0;
+  }
+  .home .furtherInfo .imageOne img {
+    -webkit-box-shadow: 0 20px 0 #F8E71C;
+            box-shadow: 0 20px 0 #F8E71C;
+  }
+  .home .furtherInfo .textOne {
+    margin: 0;
+  }
+  .home .furtherInfo .imageTwo {
+    margin-left: 0;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .home .furtherInfo .imageTwo img {
+    -webkit-box-shadow: 0 20px 0 #F8E71C;
+            box-shadow: 0 20px 0 #F8E71C;
+  }
+  .home .furtherInfo .textTwo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .home .middleNav li {
+    width: 100%;
+  }
+  .home .aboutFounder .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .aboutFounder .imgContainer {
+    margin: 0 auto;
+  }
+  .home .aboutFounder .textContainer {
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+  }
+  .home .imgGallery {
+    padding: 50px 0;
+  }
+  .home .imgGallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .imgGallery li:nth-child(n+2) {
+    margin-top: 50px;
   }
 }
 /* Landscape phones and down */
