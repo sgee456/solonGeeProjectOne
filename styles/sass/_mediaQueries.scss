@@ -70,6 +70,63 @@
             }
         }
     }
+
+    //CONTACT
+
+    .contact {
+        header {
+            height: auto;
+        }
+
+        .maxWrapper {
+            flex-direction: column;
+        }
+
+
+        .inTouch {
+            height: auto;
+
+            .maxWrapper {
+                position: static;
+            }
+        }
+
+        .leftColumn {
+            width: 100%;
+            margin: 0;
+            padding: 70px 0;
+            display: flex;
+            justify-content: center;
+            left: 0;
+
+        }
+
+        .socialNav {
+            margin-top: 0;
+        }
+
+        h1 {
+            color: $forestGreen;
+        }
+
+        h1, .flexItem {
+            margin: 0 40px;
+        }
+
+        .flexItem {
+            background-color: $offWhite;
+        }
+
+        .rightColumn {
+            width: 100%;
+            margin: 0;
+            left: 0;
+        }
+
+        .formContainer::before {
+            position: static;
+        }
+    }
 }
 
 
@@ -168,11 +225,16 @@
 
             .textOne {
                 margin: 0;
+
+                h2 {
+                    margin-top: 0;
+                }
             }
 
             .imageTwo {
                 margin-left: 0;
                 order: -1;
+                position: static;
 
                 img {
                     box-shadow: 0 20px 0 $sunnyYellow;
@@ -231,6 +293,24 @@
             padding: 25px;
         }
     }
+
+    //CONTACT
+    .contact {
+        .leftColumn {
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .socialNav {
+            ul {
+                justify-content: center;
+            }
+
+            li {
+                margin-left: 12px;
+            }
+        }
+    }
     
 }
 
@@ -266,5 +346,20 @@
             margin: 0 0 40px 0;
         }
     }
-   
+
+    //CONTACT
+    .contact {
+        form {
+            padding: 30px;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            margin: 0 0 30px 0;
+        }
+
+        input[type="email"] {
+            margin: 0 0 40px 0;
+        }
+    }
 }

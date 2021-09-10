@@ -479,6 +479,9 @@ textarea {
 .home .furtherInfo .textOne h2 {
   margin-top: 125px;
 }
+.home .furtherInfo .textOne button {
+  margin-bottom: 50px;
+}
 .home .furtherInfo .imageTwo {
   margin-left: 126px;
   position: relative;
@@ -495,6 +498,9 @@ textarea {
 }
 .home .furtherInfo .textTwo h2 {
   margin-top: 70px;
+}
+.home .furtherInfo .textTwo button {
+  margin-bottom: 50px;
 }
 .home .furtherInfo .uniquePlants {
   text-align: right;
@@ -926,6 +932,54 @@ textarea {
   .blog .currentPost .textContainer {
     padding: 50px;
   }
+
+  .contact header {
+    height: auto;
+  }
+  .contact .maxWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .inTouch {
+    height: auto;
+  }
+  .contact .inTouch .maxWrapper {
+    position: static;
+  }
+  .contact .leftColumn {
+    width: 100%;
+    margin: 0;
+    padding: 70px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 0;
+  }
+  .contact .socialNav {
+    margin-top: 0;
+  }
+  .contact h1 {
+    color: #074115;
+  }
+  .contact h1, .contact .flexItem {
+    margin: 0 40px;
+  }
+  .contact .flexItem {
+    background-color: #f0EFED;
+  }
+  .contact .rightColumn {
+    width: 100%;
+    margin: 0;
+    left: 0;
+  }
+  .contact .formContainer::before {
+    position: static;
+  }
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
@@ -1015,11 +1069,15 @@ textarea {
   .home .furtherInfo .textOne {
     margin: 0;
   }
+  .home .furtherInfo .textOne h2 {
+    margin-top: 0;
+  }
   .home .furtherInfo .imageTwo {
     margin-left: 0;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    position: static;
   }
   .home .furtherInfo .imageTwo img {
     -webkit-box-shadow: 0 20px 0 #F8E71C;
@@ -1068,6 +1126,25 @@ textarea {
   .blog textarea {
     padding: 25px;
   }
+
+  .contact .leftColumn {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .socialNav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .socialNav li {
+    margin-left: 12px;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -1091,6 +1168,17 @@ textarea {
     margin: 0 0 30px 0;
   }
   .blog input[type=email] {
+    margin: 0 0 40px 0;
+  }
+
+  .contact form {
+    padding: 30px;
+  }
+  .contact input[type=text], .contact input[type=email] {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .contact input[type=email] {
     margin: 0 0 40px 0;
   }
 }
