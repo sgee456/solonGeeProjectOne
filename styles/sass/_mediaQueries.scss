@@ -2,9 +2,71 @@
     //BLOG
 
     .blog {
+        h1 {
+            margin-top: 180px;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
         .currentPost {
+            margin-top: 0;
+
             h2 {
                 line-height: 5.3rem;
+            }
+        }
+
+        .maxWrapper {
+            flex-direction: column;
+            align-items: center;
+            margin-top: -175px;
+        }
+
+        .leftColumn {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+
+            .flexContainer {
+                width: 50%;
+                padding-left: 5%;
+                padding-top: 20px;
+            }
+
+            .whiteBackground {
+                max-width: none;
+                // left: 0;
+                text-align: center;
+                display: flex;
+            }
+
+            .imgContainer {
+                width: 45%;
+                max-width: none;
+                left: 0;
+                top: -40px;
+
+
+            }
+        }
+
+        .rightColumn {
+            width: 90%;
+            padding-top: 80px;
+            padding-right: 0%;
+
+            .currentPostImage {
+                width: 100%;
+                max-width: none;
+                top: 0;
+            }
+        }
+
+        .currentPost {
+            .textContainer {
+                padding: 50px;
             }
         }
     }
@@ -23,7 +85,35 @@
             margin-left: calc(10px + 70 * ((100vw - 768px) / 172));
         }
     }
+
+    //BLOG
+    .blog {
+        .whiteBackground {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 50px;
+
+            .imgContainer {
+                width: 100%;
+                max-width: 513px;
+            }
+
+            .aboutArticle,
+            .recentPostsArticle {
+                padding: 20px;
+            }
+        }
+
+        .leftColumn {  
+                .flexContainer {
+                    padding-left: 0;
+                    width: auto;
+                    max-width: 90%;
+                }
+        }
+    }
 }
+
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -130,12 +220,51 @@
             }
         }
     }  
+
+    //BLOG
+
+    .blog {
+        input[type="text"], input[type="email"] {
+            padding-left: 25px;
+        }
+        textarea {
+            padding: 25px;
+        }
+    }
+    
 }
+
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
     // GLOBAL TYPOGRAPHY
 
-    //HOME
+    //BLOG
+    .blog {
+        .commentsSection {
+            text-align: center;
+        }
+
+        .comment {
+            flex-direction: column;
+
+            .textContainer {
+                width: 100%;
+            }
+
+            .imgContainer {
+                margin: 0 auto 20px;
+            }
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            margin: 0 0 30px 0;
+        }
+
+        input[type="email"] {
+            margin: 0 0 40px 0;
+        }
+    }
    
 }

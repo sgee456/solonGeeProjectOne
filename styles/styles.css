@@ -627,7 +627,7 @@ textarea {
 .blog .leftColumn {
   width: 38%;
   padding-left: 10%;
-  padding-right: 3%;
+  padding-right: 1%;
 }
 .blog .leftColumn .imgContainer {
   width: 131%;
@@ -639,6 +639,7 @@ textarea {
 }
 .blog .leftColumn .whiteBackground {
   background: white;
+  max-width: 400px;
   position: relative;
   left: -20px;
 }
@@ -710,10 +711,13 @@ textarea {
   background-color: #F8E71C;
 }
 .blog .currentPost .textContainer {
-  padding: 50px 0 50px 50px;
+  padding: 50px 0 30px 50px;
   background: #f0EFED;
   position: relative;
   z-index: 1;
+}
+.blog .currentPost p {
+  margin-bottom: 20px;
 }
 .blog .commentsSection {
   padding: 10px 50px 20px 50px;
@@ -864,8 +868,63 @@ textarea {
 }
 
 @media (max-width: 1200px) {
+  .blog h1 {
+    margin-top: 180px;
+  }
+  .blog .wrapper {
+    text-align: center;
+  }
+  .blog .currentPost {
+    margin-top: 0;
+  }
   .blog .currentPost h2 {
     line-height: 5.3rem;
+  }
+  .blog .maxWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -175px;
+  }
+  .blog .leftColumn {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .blog .leftColumn .flexContainer {
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 20px;
+  }
+  .blog .leftColumn .whiteBackground {
+    max-width: none;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .blog .leftColumn .imgContainer {
+    width: 45%;
+    max-width: none;
+    left: 0;
+    top: -40px;
+  }
+  .blog .rightColumn {
+    width: 90%;
+    padding-top: 80px;
+    padding-right: 0%;
+  }
+  .blog .rightColumn .currentPostImage {
+    width: 100%;
+    max-width: none;
+    top: 0;
+  }
+  .blog .currentPost .textContainer {
+    padding: 50px;
   }
 }
 /* Portrait tablet and small desktops */
@@ -873,6 +932,30 @@ textarea {
   .home h1 {
     font-size: calc(6rem + 106 * ((100vw - 768px) / 172));
     margin-left: calc(10px + 70 * ((100vw - 768px) / 172));
+  }
+
+  .blog .whiteBackground {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 50px;
+  }
+  .blog .whiteBackground .imgContainer {
+    width: 100%;
+    max-width: 513px;
+  }
+  .blog .whiteBackground .aboutArticle,
+.blog .whiteBackground .recentPostsArticle {
+    padding: 20px;
+  }
+  .blog .leftColumn .flexContainer {
+    padding-left: 0;
+    width: auto;
+    max-width: 90%;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -978,5 +1061,36 @@ textarea {
   .home .imgGallery li:nth-child(n+2) {
     margin-top: 50px;
   }
+
+  .blog input[type=text], .blog input[type=email] {
+    padding-left: 25px;
+  }
+  .blog textarea {
+    padding: 25px;
+  }
 }
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .blog .commentsSection {
+    text-align: center;
+  }
+  .blog .comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog .comment .textContainer {
+    width: 100%;
+  }
+  .blog .comment .imgContainer {
+    margin: 0 auto 20px;
+  }
+  .blog input[type=text], .blog input[type=email] {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .blog input[type=email] {
+    margin: 0 0 40px 0;
+  }
+}

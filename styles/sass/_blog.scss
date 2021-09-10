@@ -35,7 +35,7 @@
     .leftColumn {
         width: 38%;
         padding-left: 10%;
-        padding-right: 3%;
+        padding-right: 1%;
 
         .imgContainer {
             width: 131%;
@@ -48,6 +48,7 @@
 
         .whiteBackground {
             background: white;
+            max-width: 400px;
             position: relative;
             left: -20px;
         }
@@ -123,10 +124,14 @@
         }
 
         .textContainer {
-            padding: 50px 0 50px 50px;
+            padding: 50px 0 30px 50px;
             background: $offWhite;
             position: relative;
             z-index: 1;
+        }
+
+        p {
+            margin-bottom: 20px;
         }
     }
 
