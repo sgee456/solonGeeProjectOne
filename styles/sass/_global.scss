@@ -51,6 +51,19 @@ a {
     text-decoration: none;
 }
 
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+  }
+  
+  .skipLink:focus {
+    left: 0;
+  }
+
 .siteNav {
     background-color: black;
 
