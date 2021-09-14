@@ -93,10 +93,16 @@ a {
         display: none;
     }
 
-    a, p {
+    a, p, i {
         color: white;
         font-weight: 400;
         text-transform: uppercase;
+    }
+
+    i {
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 3.2rem;
     }
 
     p {

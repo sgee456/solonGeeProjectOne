@@ -187,17 +187,43 @@
 
     .siteNav {
         ul {
+            flex-wrap: wrap;
             justify-content: space-between;
+        }
+
+        .logo, .hamburgerButton {
+            width: 50%;
+            margin: 0;
+        }
+
+        .hamburgerButton {
+            text-align: right;
+        }
+
+        .hamburgerMenu {
+            width: 100%;
+            text-align: center;
+
+            li {
+                margin: 0;
+                background: rgba(0, 0, 0, 1);
+            }
+
+            a, p {
+                display: block;
+                width: 100%;
+                padding: 50px 0;
+            }
         }
 
         li:nth-child(2) {
             display: block;
         }
 
-        li:nth-child(n + 3) {
-            // copied from sr-only
-            position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;
-        }
+        // li:nth-child(n + 3) {
+        //     // copied from sr-only
+        //     position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;
+        // }
     }
     //HOME
     .home {
