@@ -1081,7 +1081,7 @@ textarea {
     max-height: 100px;
   }
   .siteNav .hamburgerMenu a, .siteNav .hamburgerMenu p {
-    padding-top: 6vh;
+    padding-top: 4vh;
     display: block;
     width: 100%;
     height: 100%;
