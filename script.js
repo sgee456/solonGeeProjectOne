@@ -33,6 +33,7 @@ window.addEventListener('resize', event => {
 
 //2. run an event listener for the click event on the hamburgerButton in the nav
 //when button is clicked, toggle hamburgerHidden on the menu
+//also toggle page elements when 
 
 const buttonEl = document.querySelector('.hamburgerButton');
 
