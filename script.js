@@ -1,6 +1,6 @@
 //1. Setup the page so that .hamburgerMenu is hidden when screen is equal or less than 768px
 
-//select hamburgerMenu for toggling of class hamburgerHidden;
+//select hamburgerMenu for toggling of class hamburgerHidden
 // const menuLi = document.querySelectorAll('.hamburgerMenu li');
 const menuEl = document.querySelector('.hamburgerMenu');
 
@@ -21,16 +21,22 @@ if (window.innerWidth < 769) {
 
 window.addEventListener('resize', event => {
     if (window.innerWidth < 769 && !belowBreakpoint) {
-        menuEl.classList.toggle('hamburgerHidden');
+        //screen goes under 769px
+        menuEl.classList.add('hamburgerHidden');
         belowBreakpoint = true;
     } else if (window.innerWidth > 768 && belowBreakpoint) {
-        menuEl.classList.toggle('hamburgerHidden');
+        //screen goes over 768px
+        menuEl.classList.remove('hamburgerHidden');
         belowBreakpoint = false;
     }
 });
 
-//2. run an event listener for the click event on the i in the nav
-//when i is clicked, toggle a class on the other li elements that reveals them/hides them(sr-only?)
+//2. run an event listener for the click event on the hamburgerButton in the nav
+//when button is clicked, toggle hamburgerHidden on the menu
 
 const buttonEl = document.querySelector('.hamburgerButton');
+
+buttonEl.addEventListener('click', () => 
+    menuEl.classList.toggle('hamburgerHidden')
+);
 
