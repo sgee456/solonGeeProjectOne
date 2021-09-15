@@ -408,6 +408,11 @@ textarea {
   margin: 0;
 }
 
+.hamburgerHidden {
+  height: 0;
+  overflow: hidden;
+}
+
 .home header {
   background-image: url(../assets/home-image-1.jpg);
   height: 755px;
