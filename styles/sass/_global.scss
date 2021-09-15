@@ -76,20 +76,26 @@ a {
     }
 
     ul {
+        justify-content: space-between;
         align-items: flex-end;
         display: flex;
         padding: 25px 0;
+    }
+
+    .hamburgerMenu {
+        display: flex;
+        width: calc(100% - 150px);
     }
 
     li {
         margin: 0 26px;
     }
 
-    li:first-child {
+    .logo {
         margin-left: 0;
     }
 
-    li:nth-child(2) {
+    .hamburgerButton {
         display: none;
     }
 

@@ -282,6 +282,9 @@ a {
   line-height: 3.8rem;
 }
 .siteNav ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -290,13 +293,19 @@ a {
   display: flex;
   padding: 25px 0;
 }
+.siteNav .hamburgerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 150px);
+}
 .siteNav li {
   margin: 0 26px;
 }
-.siteNav li:first-child {
+.siteNav .logo {
   margin-left: 0;
 }
-.siteNav li:nth-child(2) {
+.siteNav .hamburgerButton {
   display: none;
 }
 .siteNav a, .siteNav p, .siteNav i {
@@ -1048,23 +1057,22 @@ textarea {
     margin: 0;
   }
   .siteNav .hamburgerButton {
+    display: block;
     text-align: right;
   }
   .siteNav .hamburgerMenu {
+    display: block;
     width: 100%;
     text-align: center;
   }
   .siteNav .hamburgerMenu li {
     margin: 0;
-    background: black;
+    background: rgba(0, 0, 0, 0.7);
   }
   .siteNav .hamburgerMenu a, .siteNav .hamburgerMenu p {
     display: block;
     width: 100%;
     padding: 50px 0;
-  }
-  .siteNav li:nth-child(2) {
-    display: block;
   }
 
   .home h1 {
