@@ -1077,11 +1077,14 @@ textarea {
   .siteNav .hamburgerMenu li {
     margin: 0;
     background: rgba(0, 0, 0, 0.85);
+    height: calc(25vh - 84px / 4);
+    max-height: 100px;
   }
   .siteNav .hamburgerMenu a, .siteNav .hamburgerMenu p {
+    padding-top: 6vh;
     display: block;
     width: 100%;
-    padding: 50px 0;
+    height: 100%;
   }
 
   .home h1 {
